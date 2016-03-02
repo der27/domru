@@ -15,11 +15,12 @@ $(document).ready(function() {
 	    }, 1000);
 	}
 
-	if (Modernizr.touchevents) {
+	/*if (Modernizr.touchevents) {
 		$('.slide').each(function() {
+			$(this).offset({top: 0});
 			$(this).css('min-height', heightWin);
 		});
-	}
+	}*/
 
 	$('.slide').each(function() {
     	$(this).offset({top: (heightWin - $(this).outerHeight())/2});
