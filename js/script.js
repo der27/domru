@@ -1,3 +1,10 @@
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.loader');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+
 $(document).ready(function() {
     var heightWin = $(window).height(),
 		countdown = $('.countdown'),
