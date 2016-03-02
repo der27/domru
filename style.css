@@ -186,6 +186,11 @@ p {
   display: inline-block;
   cursor: pointer;
   margin-top: 56px;
+  -webkit-transition: background 0.2s cubic-bezier(0, 0, 1, 1);
+  transition: background 0.2s cubic-bezier(0, 0, 1, 1);
+}
+.slide-1 .btn:hover {
+  background: #41913b;
 }
 .slide-2 {
   background: url('images/hand.png') center no-repeat;
