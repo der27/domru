@@ -9,10 +9,16 @@ $(document).ready(function() {
 	    countdown.text(startFrom + "...");
 	    timer = setInterval(function() {
 	        countdown.text(--startFrom + "...");
-	        if (startFrom <= 0) {
+	        if (startFrom <= 1) {
 	            clearInterval(timer);
 	        }
 	    }, 1000);
+	}
+
+	if (Modernizr.touchevents) {
+		$('.slide').each(function() {
+			$(this).css('min-height', heightWin);
+		});
 	}
 
 	$('.slide').each(function() {
@@ -20,7 +26,6 @@ $(document).ready(function() {
     	if ($(this).outerHeight() > heightWin) {
     		$(this).offset({top: 10});
     	}
-    	$(this).css('min-height', heightWin);
     });
 
     $('.slide-1').fadeIn(2000);
@@ -40,7 +45,7 @@ $(document).ready(function() {
     	setTimeout(function() {
 		    $('.slide-2').fadeOut(1500, function() {
 		    	setTimeout(function() {
-				    $('.slide-4').fadeIn(2000);
+				    $('.slide-4').fadeIn(1500);
 				}, 1000);
 		    });
 		}, 9000);
