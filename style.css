@@ -153,6 +153,7 @@ p {
   margin: 0 auto;
   display: none;
   position: relative;
+  min-width: 676px;
 }
 .slide.layer-bg .title {
   font-family: "FedraSans-Medium";
@@ -161,13 +162,16 @@ p {
   margin-bottom: 31px;
 }
 .slide.layer-bg .layer-bg__content {
-  margin-top: 26px;
+  /*margin-top: 26px;*/
   padding: 29px 38px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url('images/layer.png') no-repeat;
+  /*background: url('images/layer.png') no-repeat;*/
   min-height: 598px;
+  background: url('images/layer.png') center no-repeat;
+  margin: 26px auto 0;
+  width: 676px;
 }
 .slide-1 .btn {
   font-family: "FedraSans-Medium";
@@ -296,4 +300,11 @@ p {
 }
 .pluso-more {
   display: none !important;
+}
+.touchevents .video {
+  display: none;
+}
+.touchevents .slide-3 {
+  background: url('images/bg.jpg') no-repeat;
+  background-size: cover;
 }
