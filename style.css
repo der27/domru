@@ -142,7 +142,7 @@ table {
   font-style: normal;
 }
 body {
-  font-family: "FedraSans-Regular";
+  font-family: "FedraSans-Regular,Arial,Helvetica", sans-serif;
 }
 p {
   font-size: 22px;
@@ -156,7 +156,7 @@ p {
   min-width: 676px;
 }
 .slide.layer-bg .title {
-  font-family: "FedraSans-Medium";
+  font-family: "FedraSans-Medium", sans-serif;
   font-size: 44px;
   line-height: 1.2;
   margin-bottom: 31px;
@@ -172,7 +172,7 @@ p {
   width: 676px;
 }
 .slide-1 .btn {
-  font-family: "FedraSans-Medium";
+  font-family: "FedraSans-Medium", sans-serif;
   text-transform: uppercase;
   color: #fefefe;
   background: #50b848;
@@ -296,7 +296,7 @@ p {
   line-height: 1.5;
 }
 .slide-4 .shared__text {
-  font-family: "FedraSans-Medium";
+  font-family: "FedraSans-Medium", sans-serif;
   font-size: 18px;
   margin-bottom: 7px;
 }
