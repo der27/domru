@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Подключение шрифтов*/
+@font-face {
+  font-family: "FedraSans-Regular";
+  src: url("fonts/FedraSansAltPro-Book.eot");
+  src: url("fonts/FedraSansAltPro-Book.eot?#iefix") format("embedded-opentype"), url("fonts/FedraSansAltPro-Book.woff") format("woff"), url("fonts/FedraSansAltPro-Book.ttf") format("truetype"), url("fonts/FedraSansAltPro-Book.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FedraSans-Medium";
+  src: url("fonts/FedraSansAltPro-Medium.eot");
+  src: url("fonts/FedraSansAltPro-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/FedraSansAltPro-Medium.woff") format("woff"), url("fonts/FedraSansAltPro-Medium.ttf") format("truetype"), url("fonts/FedraSansAltPro-Medium.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "FedraSans-Regular";
+}
+p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+.slide {
+  width: 676px;
+  margin: 0 auto;
+  display: none;
+  position: relative;
+}
+.slide.layer-bg .title {
+  font-family: "FedraSans-Medium";
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 31px;
+}
+.slide.layer-bg .layer-bg__content {
+  margin-top: 26px;
+  padding: 29px 38px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('images/layer.png') no-repeat;
+  min-height: 598px;
+}
+.slide-1 .btn {
+  font-family: "FedraSans-Medium";
+  text-transform: uppercase;
+  color: #fefefe;
+  background: #50b848;
+  border: 5px solid #c8d23a;
+  font-size: 24px;
+  padding: 14px 43px;
+  border-radius: 35px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 56px;
+}
+.slide-2 {
+  background: url('images/hand.png') center no-repeat;
+  min-height: 689px;
+}
+.slide-2 .slide-2__content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -50px;
+  width: 180px;
+}
+.slide-2 .counter {
+  margin-top: 25px;
+}
+/*Лоудер*/
+.loader {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 0 1px 1px #767676;
+  animation: load 1590ms infinite linear;
+  -o-animation: load 1590ms infinite linear;
+  -ms-animation: load 1590ms infinite linear;
+  -webkit-animation: load 1590ms infinite linear;
+  -moz-animation: load 1590ms infinite linear;
+}
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes load {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes load {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes load {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes load {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.slide-3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: -1;
+}
+.slide-3 .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .slide-3 > .video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .slide-3 > .video {
+    width: 300%;
+    left: -100%;
+  }
+}
+@supports (object-fit: cover) {
+  .slide-3 > .video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.slide-4 .shared {
+  margin-top: 46px;
+}
+.slide-4 p {
+  font-size: 30px;
+  line-height: 1.5;
+}
+.slide-4 .shared__text {
+  font-family: "FedraSans-Medium";
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.pluso-more {
+  display: none !important;
+}
