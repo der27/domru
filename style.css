@@ -162,12 +162,10 @@ p {
   margin-bottom: 31px;
 }
 .slide.layer-bg .layer-bg__content {
-  /*margin-top: 26px;*/
   padding: 29px 38px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*background: url('images/layer.png') no-repeat;*/
   min-height: 598px;
   background: url('images/layer.png') center no-repeat;
   margin: 26px auto 0;
