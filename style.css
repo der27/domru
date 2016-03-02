@@ -311,12 +311,11 @@ p {
   background: url('images/bg.jpg') no-repeat;
   background-size: cover;
 }
-#page-preloader {
+.slide-start {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background: #000;
-  z-index: 100500;
+  background: #fff;
 }
