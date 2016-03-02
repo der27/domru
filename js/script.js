@@ -20,6 +20,7 @@ $(document).ready(function() {
     	if ($(this).outerHeight() > heightWin) {
     		$(this).offset({top: 10});
     	}
+    	$(this).css('min-height', heightWin);
     });
 
     $('.slide-1').fadeIn(2000);
