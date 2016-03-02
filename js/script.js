@@ -30,12 +30,13 @@ $(document).ready(function() {
 	}*/
 
 	$('.slide').each(function() {
-    	$(this).offset({top: (heightWin - $(this).outerHeight())/2});
     	if ($(this).outerHeight() > heightWin) {
     		$(this).offset({top: 10});
+    	} else {
+    		$(this).offset({top: (heightWin - $(this).outerHeight())/2});
     	}
     });
-    
+
     //$('.slide-1').fadeIn(2000);
 
     setTimeout(function() {
@@ -79,9 +80,10 @@ $(window).resize(function() {
 	var heightWin = $(window).height();
 
 	$('.slide').each(function() {
-    	$(this).offset({top: (heightWin - $(this).outerHeight())/2});
     	if ($(this).outerHeight() > heightWin) {
     		$(this).offset({top: 10});
+    	} else {
+    		$(this).offset({top: (heightWin - $(this).outerHeight())/2});
     	}
     });
 });
