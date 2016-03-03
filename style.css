@@ -171,6 +171,17 @@ p {
   bottom: 0 !important;
   display: none;
 }
+@-webkit-keyframes blendAnimate {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0;
+  }
+}
 @keyframes blendAnimate {
   0% {
     background-position: 0;
@@ -237,8 +248,42 @@ p {
   margin: 26px auto 0;
   width: 676px;
 }
+.rotate-wrap {
+  width: 676px;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+}
+.rotate-wrap.rotate {
+  visibility: visible;
+}
+.rotate-wrap.rotate .layer-bg__content {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.rotate-wrap .layer-bg__content {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-70deg);
+  -moz-transform: rotateY(-70deg);
+  -ms-transform: rotateY(-70deg);
+  transform: rotateY(-70deg);
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  opacity: 0;
+}
 .slide-1 {
   float: right;
+  display: none;
 }
 .slide-1 .btn {
   font-family: "FedraSans-Medium", sans-serif;
