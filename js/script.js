@@ -53,7 +53,7 @@ $(document).ready(function() {
 				    	setTimeout(startCountdown, 100);
 				    	setTimeout(function () {
 						    $('.container, .slide-2, .loader').fadeOut(1500);
-						}, 3000);
+						}, 2000);
 				    });
 				}, 800);
 			}, 500);
@@ -70,7 +70,7 @@ $(document).ready(function() {
 				    });
 				}, 3000);
 		    });
-		}, 4000);
+		}, 2500);
     });
 
 });
