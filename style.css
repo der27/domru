@@ -126,23 +126,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*Подключение шрифтов*/
-@font-face {
-  font-family: "FedraSans-Regular";
-  src: url("fonts/FedraSansAltPro-Book.eot");
-  src: url("fonts/FedraSansAltPro-Book.eot?#iefix") format("embedded-opentype"), url("fonts/FedraSansAltPro-Book.woff") format("woff"), url("fonts/FedraSansAltPro-Book.ttf") format("truetype"), url("fonts/FedraSansAltPro-Book.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "FedraSans-Medium";
-  src: url("fonts/FedraSansAltPro-Medium.eot");
-  src: url("fonts/FedraSansAltPro-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/FedraSansAltPro-Medium.woff") format("woff"), url("fonts/FedraSansAltPro-Medium.ttf") format("truetype"), url("fonts/FedraSansAltPro-Medium.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
-  font-family: "FedraSans-Regular", sans-serif;
+  font-family: Arial, sans-serif;
   position: relative;
 }
 p {
@@ -233,7 +218,7 @@ p {
   width: 600px;
 }
 .slide.layer-bg .title {
-  font-family: "FedraSans-Medium", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 44px;
   line-height: 1.2;
   margin-bottom: 31px;
@@ -285,7 +270,7 @@ p {
   display: none;
 }
 .slide-1 .btn {
-  font-family: "FedraSans-Medium", sans-serif;
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
   color: #fefefe;
   background: #50b848;
@@ -309,7 +294,7 @@ p {
   margin-left: -300px;
   text-align: center;
   font-size: 18px;
-  font-family: "FedraSans-Medium", sans-serif;
+  font-family: Arial, sans-serif;
   display: none;
   min-height: 525px;
 }
