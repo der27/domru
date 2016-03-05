@@ -163,8 +163,8 @@ p {
   background-image: url('images/back.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-animation: blendAnimate 180s linear infinite;
-  animation: blendAnimate 180s linear infinite;
+  -webkit-animation: blendAnimate 130s linear infinite;
+  animation: blendAnimate 130s linear infinite;
   position: relative;
   z-index: 0;
   top: auto !important;
