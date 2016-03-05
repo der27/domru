@@ -4,7 +4,7 @@ $(document).ready(function() {
 		timer;
 
 	function startCountdown() {
-	    var startFrom = 3;
+	    var startFrom = 2;
 
 	    countdown.text(startFrom + "...");
 	    timer = setInterval(function() {
@@ -47,13 +47,13 @@ $(document).ready(function() {
     $('.btn-start').on('click', function() {
 		$('.slide-1').fadeOut(800, function() {
 			setTimeout(function() {
-			    $('.container').animate({left: '-42%'}, 1000);
+			    $('.container').animate({left: '-32%'}, 1000);
 			    setTimeout(function () {
 				    $('.slide-2, .loader').fadeIn(800, function() {
 				    	setTimeout(startCountdown, 100);
 				    	setTimeout(function () {
 						    $('.container, .slide-2, .loader').fadeOut(1500);
-						}, 2000);
+						}, 1000);
 				    });
 				}, 800);
 			}, 500);
@@ -68,7 +68,7 @@ $(document).ready(function() {
 						    $('.slide-4 .rotate-wrap').addClass('rotate');
 						}, 100);
 				    });
-				}, 3000);
+				}, 2000);
 		    });
 		}, 2500);
     });
